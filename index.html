@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador G6 - Oracle + Alura - Ronaldo Perez Pilco</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Challenge Encriptador G6 - Oracle + Alura - Ronaldo Perez Pilco</h1>
+        <div class="encriptar">
+            <textarea name="campo-texto" id="campo-texto" class="campo-texto" cols="30" rows="10"
+                placeholder="Ingresa el texto a encriptar." oninput="validarCampoTexto(event)"></textarea>
+        </div>
+        <div class="terminos-uso">
+            <p>Solo utilizar letras minúsculas, ñ y espacios.</p>
+        </div>
+        <div class="botones-accion">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar texto</button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar texto</button>
+        </div>
+        <div class="encriptado">
+            <img src="img/encriptando.gif" alt="" id="imginicio">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas Encriptar o Desencriptar</p>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
